@@ -42,12 +42,45 @@
         </header>
         <main class="content">
             <div id="reservation">
-
+              <h2 class="reservation-title">Reservar una mesa</h2>
+                <form>
+                  <fieldset>
+                    <label class="form__reservation--label" for="nombreDeCliente">Nombre *</label>
+                    <input type="text" name="customer-name" id="nombreDeCliente" class="form__reservation" placeholder="Nombre" required/>
+                    <label for="numeroDeComensales" class="form__reservation--label">Número de comensales *</label>
+                    <input type="number" name="customer-number" id="numeroDeComensales" min="1" max="8" class="form__reservation" placeholder="1-8" required/>
+                    <label for="fechaYhoraDeResevacion" class="form__reservation--label">Fecha y hora *</label>
+                    <input type="datetime-local" name="reservation-time" id="fechaYhoraDeResevacion" class="form__reservation" required/>
+                    <label for="emailCliente" class="form__reservation--label">Tu correo electrónico *</label>
+                    <input type="email" name="email-reservation" id="emailCliente" class="form__reservation" placeholder="email@email.com" required>
+                    <button type="submit" class="form__submit--bottom">Reserva una mesa</button>
+                    <label class="form__checkbox">
+                      <input type="checkbox" class="form__checkbox-input" required/>
+                      <span class="form__checkbox-text">Acepto los términos de uso</span>
+                    </label>
+                  </fieldset>
+                </form>
             </div>
-
         </main>
         <footer class="footer" id="contact">
-
+          <div class="footer__content">
+            <img src="images/logo_coffeeshop_light.svg" alt="Triple Espresso" class="footer__logo">
+            <div class="footer__circle"></div>
+            <div class="footer__social">
+              <h3 class="footer__social-title">Redes sociales</h3>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                  <img src="images/facebook_white.svg" alt="Red social" class="footer__social-icon"> Facebook</a>
+                  </li>
+                  <li class="footer__social-item">
+                  <a href="#" class="footer__social-link">
+                  <img src="images/instagram_white.svg" alt="Red social" class="footer__social-icon"> Instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="footer__copyright">© 2026 Oscar Carcaño</p>
+          </div>
         </footer>
     </body>
 </html>
